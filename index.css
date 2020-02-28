@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.container{
+    justify-content: center;
+    margin:auto;
+}
+.greeting-text{
+    flex-direction: column;
+    font-family: 'Sacramento';
+    font-size:40px;
+    text-align: center;
+}
+
+
+.guide-links{
+    display:flex;
+    font-family: 'Sacramento';
+    font-size:35px;
+    justify-content: center;
+}
+.center{
+    display:flex;
+    justify-content:center;
+}
+
+.about-content {
+    display: flex;
+
+}
+
+#bridge-pic{
+    width:300px;
+    margin: 0 50px 50px 50px;
+}
+.details{
+    font-family: 'Roboto Mono';
+    margin: 20px 50px 0 50px;
+}
+.top{
+    background-image: url('./img/sky.png');
+}
+.about-page{
+    background-color: #92BCEA;
+}
+.project-page{
+    background-color: #D9F0FF;
+}
+
+.project {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.sizing-projects{
+    max-width:400px;
+    align-content: center;
+}
+
+.hello {
+    margin-top:0;
+    margin-bottom:0;
+}
+.title{
+    font-family: 'Sacramento';
+    font-size:40px;
+}
+.contact-me{
+    background-color: #AFB3F7;
+}
+.icon{
+    width:50px;
+    height:50px;
+}
+.row {
+    justify-content: center;
+}
+
+.scrolling {
+    scroll-behavior: smooth;
+}
+
+.mobile-column {
+    flex-direction: column;
+}
