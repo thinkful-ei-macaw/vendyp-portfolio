@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
 }
@@ -19,13 +18,21 @@
     text-align: center;
 }
 
+a {
+    cursor: pointer;
+    color:gray;
+}
+p{
+    margin-bottom:8px;
+}
 
 .guide-links{
     display:flex;
-    font-family: 'Sacramento';
-    font-size:35px;
+    font-family: 'Roboto Mono';
+    font-size:12px;
     justify-content: center;
 }
+
 .center{
     display:flex;
     justify-content:center;
@@ -36,13 +43,18 @@
 
 }
 
+.rounded-border{
+    border-radius: 5%;
+    margin-bottom:20px;
+}
+
 #bridge-pic{
     width:300px;
-    margin: 0 50px 50px 50px;
+    margin: 0 50px 20px 50px;
 }
 .details{
     font-family: 'Roboto Mono';
-    margin: 20px 50px 0 50px;
+    margin: 0 50px 20px 50px;
 }
 .top{
     background-image: url('./img/sky.png');
@@ -85,8 +97,30 @@
 
 .scrolling {
     scroll-behavior: smooth;
+    margin-left:5px;
+    margin-right:5px;
 }
 
-.mobile-column {
+.item-align {
+    display:flex;
     flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-size:16px;
+    margin:20px 35px 20px 35px;
 }
+
+.quick-info{
+    font-size:25px;
+}
+.icon-spacing{
+    margin:0 5px 30px 5px;
+    color:gray;
+}
+
+@media only screen and (max-width: 600px) {
+    .project, .about-content, .contact, .guide-links, .item-align {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
