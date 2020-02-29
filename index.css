@@ -30,7 +30,9 @@ p{
     display:flex;
     font-family: 'Roboto Mono';
     font-size:12px;
+    align-items:center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .center{
@@ -40,6 +42,7 @@ p{
 
 .about-content {
     display: flex;
+    flex-direction: column;
 }
 
 .rounded-border{
@@ -53,6 +56,7 @@ p{
 }
 .details{
     font-family: 'Roboto Mono';
+    flex-direction: column;
     margin: 0 20px 20px 20px;
 }
 .top-view{
@@ -68,6 +72,7 @@ p{
 .project {
     display:flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .sizing-projects{
@@ -85,6 +90,11 @@ p{
 }
 .contact-me{
     background-color: #AFB3F7;
+    padding-bottom: 60px;
+}
+.contact-me a {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .icon{
     width:50px;
@@ -120,9 +130,9 @@ p{
     margin-right:67px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .project, .about-content, .contact, .guide-links, .item-align .detail{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
   }
